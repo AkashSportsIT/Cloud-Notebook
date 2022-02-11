@@ -1,0 +1,8 @@
+onClick--> darkmode
+homePage -> Public Data should come
+notes ==> if it is empty display something..
+
+
+
+
+---> if not logged in please show a different screen
