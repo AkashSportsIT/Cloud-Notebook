@@ -1,0 +1,8 @@
+@media  screen and (max-width: 900px){
+    .main-box{
+        flex-direction: column;
+    }
+    .v-line{
+        display: none;
+    }
+}
