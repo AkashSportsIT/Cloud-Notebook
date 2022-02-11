@@ -65,7 +65,7 @@ const Register = (props) => {
             console.log(json)
             if (json.Success) {
                 localStorage.setItem('token', json.token)
-                navigate('/notes')
+                navigate('/login')
                 props.showAlert("Account Created Succesfully", "success")
             }
             else {
