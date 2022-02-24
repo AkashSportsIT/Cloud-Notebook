@@ -1,5 +1,5 @@
 const express = require('express')
-const noteController = require('../Controllers/Notes.controller');
+// const noteController = require('../Controllers/Notes.controller');
 const fetchUser = require('../Middleware/fetchUser');
 const NotesModel = require('../Models/Note.model');
 
@@ -7,7 +7,6 @@ const router = express.Router();
 
 
 // create notes
-
 router.post('/createnote', fetchUser, async (req, res) => {
     // console.log(req.user.id)
     let rawData = {

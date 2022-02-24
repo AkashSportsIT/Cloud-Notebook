@@ -17,9 +17,10 @@
 .data-card {
   display: flex;
   flex-direction: column;
-  max-width: 20.75em;
+  max-width: 16.75em;
   min-height: 20.75em;
   overflow: hidden;
+  border: 1px solid #753bbd;
   border-radius: 0.5em;
   text-decoration: none;
   background: white;
@@ -30,7 +31,7 @@
 }
 .data-card h3 {
   color: #2e3c40;
-  font-size: 3.5em;
+  font-size: 1.8em;
   font-weight: 600;
   line-height: 1;
   padding-bottom: 0.5em;
@@ -41,7 +42,7 @@
 .data-card h4 {
   color: #627084;
   text-transform: uppercase;
-  font-size: 1.125em;
+  font-size: 0.4em;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.1em;
@@ -49,6 +50,7 @@
   transition: color 0.45s ease;
 }
 .data-card p {
+  font-size: 0.8em;
   opacity: 0;
   color: #ffffff;
   font-weight: 600;
@@ -99,6 +101,13 @@
   fill: #ffffff;
 }
 
+
+/* .icons {
+  display: flex;
+  margin: 0 0 1.25em;
+  position: relative;
+  bottom: -2.5em;
+} */
 
 
 
