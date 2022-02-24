@@ -14,11 +14,11 @@ router.post('/login', userController.login)
 
 // get details
 router.post('/getuserdetails', fetchUser, async (req, res) => {
-    console.log(req.user.id)
+    // console.log(req.user)
     try {
         const userId = req.user.id;
         const user = await UserModel.findById(userId).select("-password").select("-cpassword")
-        res.send(user)
+        res.status(200).send({ Success: true, message: 'Getting User details Success', data: user })
     } catch (error) {
         res.status(500).send({ Success: false, message: 'Server Error' })
     }

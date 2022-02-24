@@ -21,7 +21,7 @@ const NoteItem = (props) => {
                 <h4>{note.tag}</h4>
                 <p>{note.description}</p>
 
-                <div className="w-25 mt-5">
+                <div className="w-25 mt-5 d-flex icons">
                     <i className="fad fa-trash-alt mx-2" onClick={handleClick}></i>
                     <i className="fad fa-edit" onClick={() => { updateDateNote(note) }}></i>
                 </div>

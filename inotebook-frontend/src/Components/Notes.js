@@ -47,11 +47,12 @@ const Notes = (props) => {
 
   return (
     <>
-      <div className='d-flex'>
+      <div className='main-container d-flex flex-wrap'>
         <div className='container w-25'>
           <h3 style={{ fontWeight: '900' }} > Add Your Note Here</h3>
           <AddNote showAlert={props.showAlert} />
         </div>
+
         <div className='row justify-content-center  w-75'>
           <h1 className='my-5 font-weight-bold text-center'>Your Notes</h1>
           {notes.length > 0 ?
